@@ -19,7 +19,7 @@ function Main({loadworld, username}: MainProps) {
     let money= undefined;
 
     if (loadworld) {
-        logo = <img className='logo' src={'https://isiscapitalistgraphql.kk.kurasawa.fr/'+ world.logo} alt="" /> //'http://localhost:4000/'
+        logo = <img className='logo' src={'http://localhost:4000/'+ world.logo} alt="" /> //'http://localhost:4000/'
         money = <span dangerouslySetInnerHTML={{ __html: transform(loadworld?.money) }}></span>
     }
     else{
